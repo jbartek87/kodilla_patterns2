@@ -8,14 +8,13 @@ import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.w3c.dom.ls.LSOutput;
 
 import java.math.BigDecimal;
 
 @Aspect
 @Component
-public class Watcher {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Watcher.class);
+public class Watcher2 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Watcher2.class);
 
     @Before("execution(* com.kodilla.kodillapatterns2.aop.calculator.Calculator.factorial(..))" +
     "&& args(theNumber) && target(object)")

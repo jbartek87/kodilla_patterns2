@@ -6,13 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
-
 @Aspect
 @Component
 public class Watcher {
 
-    private static  Logger LOGGER = LoggerFactory.getLogger(com.kodilla.kodillapatterns2.aop.calculator.Watcher.class);
+    private static  Logger LOGGER = LoggerFactory.getLogger(com.kodilla.kodillapatterns2.aop.calculator.Watcher2.class);
 
     @Before("execution(* com.kodilla.kodillapatterns2.facade.api.OrderFascade.processOrder(..))")
     public void logEvent() {
